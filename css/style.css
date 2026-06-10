@@ -4,5 +4,156 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+    min-height: 100%;
+    overflow-y: hidden;
+   
+}
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+ul {
+    list-style: none;     /* Removes the bullet point */
+    display: flex;        /* Aligns your items horizontally side-by-side */
+    gap: 70px;           
+    align-items: center;  /* Centers them vertically relative to your logo */
+   
+}
+
+
+
+
+/* ---------------------------------- */
+
+
+
+
+
+
+
+
+
+.heroImage{
+    background: url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+}
+.overlay{
+    background: rgba(115, 189, 189, 0.7);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo img{
+    height: 125px;
+    width: 125px;
+    z-index: 2;
+    margin-left: 100px;
+   
+}
+
+.container{
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 40px;
+   
+}
+
+ul li a{
+   font-size: 20px;
+  color: white;
+  font-weight: 500;
+   font-family: "Inter", sans-serif;
+  
+   
+}
+ul li a i{
+    padding-right: 20px;
+}
+
+
+ul li a:hover{
+    background-color: rgb(204, 39, 66);
+   padding: 13px;
+   border-radius: 10px;
+   transition: 0.5s;
+
+}
+
+
+
+
+
+
+.content {
+    /* 1. CRITICAL: Tells the browser to respect z-index layers */
+    position: relative;
+    
+    /* 2. CRITICAL: Lifts it to layer 2, safely in front of the overlay */
+    z-index: 2; 
+    
+    /* 3. Add some margin/padding so it doesn't hug the navbar */
+    padding: 120px 200px; 
+    font-family: "Inter", sans-serif;
+}
+
+/* Optional styling to make your text perfectly readable over the teal tint */
+.content h1 {
+    color: #ffffff; /* Swapping to white makes it look incredibly crisp! */
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+   
+}
+
+.content p {
+    color: #f0f0f0;
+    margin-top: 40px;
+   font-size: 20px;
+   font-weight: 400;
+   width: 600px;
+   line-height: 30px;
+
+}
+
+.content input{
+    border: none;
+    padding: 20px;
+    margin-top: 40px;
+    width: 450px;
+    border-radius: 5px;
+
+
+}
+
+
+.content button{
+
+    background-color: rgb(204, 39, 66);
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: 300;
+    width: 100px;
+    border-radius: 5px;
+    margin-left: -115px;
+
+
 }
